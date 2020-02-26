@@ -46,6 +46,10 @@ public class Stack<Item> implements IStack<Item>, Iterable<Item> {
         return N;
     }
 
+    public Item peek() {
+        return first.item;
+    }
+
     @Override
     public Iterator<Item> iterator() {
         return new Iterator<Item>() {
